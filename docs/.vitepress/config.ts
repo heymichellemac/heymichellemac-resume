@@ -58,7 +58,7 @@ export default defineConfig({
 
     footer: {
       message:
-        'Made by <a rel="me" href="https://heymichellemac.com/" target="_blank">heymichellemac</a>',
+        'Made by <a rel="me" href="https://heymichellemac.com/" target="_blank" rel="noopener noreferrer">heymichellemac</a> | Powered by <a href="https://vitepress.dev/" target="_blank" rel="noopener noreferrer">Vitepress</a>',
     },
   },
 });
