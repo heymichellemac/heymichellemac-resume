@@ -1,0 +1,16 @@
+:root {
+  --vp-c-brand: #db2777;
+  --vp-c-brand-light: #ec4899;
+  --vp-c-brand-lighter: #f472b6;
+  --vp-c-brand-dark: #be185d;
+  --vp-c-brand-darker: #9d174d;
+}
+
+.is-home img {
+  border-radius: 2rem;
+}
+
+.VPFooter a {
+  color: var(--vp-c-brand);
+  font-weight: 600;
+}

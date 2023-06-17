@@ -1,16 +1,18 @@
 ---
-title: Writing Sample - Walkthrough Guide
+title: Walkthrough Guide - How I Use Embedded Queries In Obsidian To Simplify My Note Management
 ---
 
 # {{ $frontmatter.title }}
 
-## How I Use Embedded Queries In Obsidian To Simplify My Note Management
+**Table Of Contents**
+
+[[TOC]]
 
 Today I'm going to share with you how I use embedded queries inside of Obsidian.
 
-I'll explain what they are, how they work, and give you some examples of how I use them to retrieve lists of notes inside my personal Obsidian vault.
+I'll explain what they are, how they work, and give you some examples of how I use them to retrieve lists of notes inside my personal [Obsidian](https://obsidian.md/) vault.
 
-### What Is An Embedded Query?
+## What Is An Embedded Query?
 
 In Obsidian, an embedded query is functionality that lets you insert a search query into a note. You'll then see the results of the query display from directly within the note.
 
@@ -18,7 +20,7 @@ Think of it like a saved search that you don't have to type into the search bar 
 
 This is core Obsidian functionality which means you don't have to install any community plugins to make it work.
 
-### How Can I Set Up An Embedded Query?
+## How Can I Set Up An Embedded Query?
 
 To set up an [embedded query](https://help.obsidian.md/Plugins/Search#Embed+search+results+in+a+note) in a note you'll need to:
 
@@ -33,23 +35,23 @@ file:("Daily Note")
 ```
 ````
 
-### Pros And Cons Of Embedded Queries
+## Pros And Cons Of Embedded Queries
 
 I realize this approach may not be for everyone so I wanted to highlight some of the pros and cons of using embedded queries over using something like Dataview.
 
-#### Pros:
+### Pros:
 
 - Much simpler to use than a plugin like Dataview.
 - You can build a search query using the search bar and simply copy it into the query code block.
 - If you know how to search inside of Obsidian you don't need to learn anything new to make embedded queries work.
 - This might be my crazy designer brain here but I prefer how embedded query results look to Dataview query results. Especially with the stunningly beautiful default theme that ships with Obsidian V1.0.
 
-#### Cons:
+### Cons:
 
 - As it's simpler than Dataview you're missing a lot of the functionality of something as powerful as Dataview. For instance you can only retrieve lists not tables.
 - As I write this, [Obsidian Publish doesn't support embedded search results](https://help.obsidian.md/Plugins/Search#Embed+search+results+in+a+note).
 
-### Power User Tip: How To Extend The Functionality Of Embedded Queries With Query Control
+## Power User Tip: How To Extend The Functionality Of Embedded Queries With Query Control
 
 This is the reason I find embedded queries so perfect for my use case: [the Query Control plugin](https://github.com/nothingislost/obsidian-query-control).
 
@@ -63,15 +65,15 @@ As of the time of writing this plugin still appears to be in beta so to install 
 
 You'll either need to manually install it or install the BRAT community plugin ([details on how to do each is outlined here on the plugin page](https://github.com/nothingislost/obsidian-query-control#installing-via-brat)).
 
-### Examples Of How I Use Embedded Queries
+## Examples Of How I Use Embedded Queries
 
 Let's take a look at some of the ways I've incorporated embedded queries into my Obsidian vault.
 
-#### 1 - Content Processing Inbox
+### 1 - Content Processing Inbox
 
 My Inbox note is where I process the bulk of my notes. These are made up of old unprocessed random notes and highlights synced from my read-it-later tool [Matter](https://hq.getmatter.com/).
 
-It's basically just a list of every note tagged with #inbox.
+It's basically just a list of every note tagged with `#inbox`.
 
 Here's the query:
 
@@ -81,13 +83,15 @@ And here's what that produces:
 
 ![Inbox Result](https://heymichellemac.com/assets/images/2022/MXA22020/inbox-results.png)
 
-Note: "-path:99-templates" is used to exclude anything that lives in the "99-templates" directory.
+`-path:99-templates` is used to exclude anything that lives in the `99-templates` directory.
 
 To process my notes I simply open this note, click on a note that seems interesting to me and start processing.
 
-Note: I'd love to be able to return a random ordering of these results but it's something I'm still working on. If you know of a way to return a random ordering of results I'd love to hear from you!
+::: tip Note
+I'd love to be able to return a random ordering of these results but it's something I'm still working on. If you know of a way to return a random ordering of results I'd love to hear from you!
+:::
 
-#### 2 - Content Creation Hub
+### 2 - Content Creation Hub
 
 This note contains a list of articles I want to/am writing. As you can see from the screenshot below, it's broken out into In Progress, Up Next, and Backlog.
 
@@ -95,7 +99,7 @@ This note contains a list of articles I want to/am writing. As you can see from 
 
 If you need some help using the Obsidian search operators, I made a helpful cheat sheet you can download and modify [the Figma file here](https://www.figma.com/community/file/1168867974967146879).
 
-#### 3 - List of Articles To Include In My Weekly Newsletter
+### 3 - List of Articles To Include In My Weekly Newsletter
 
 I publish a newsletter called [Design Insight](https://designinsight.substack.com/) which is a weekly newsletter for creatives with a focus on design.
 
@@ -107,7 +111,7 @@ This quickly and easily lets me pick which articles to include in that week's ne
 
 ![Design Insight Articles List](https://heymichellemac.com/assets/images/2022/MXA22020/design-insight-query.png)
 
-#### 4 - In my Yearly, Quarterly, Weekly, Daily notes
+### 4 - In my Yearly, Quarterly, Weekly, Daily notes
 
 Full disclosure I haven't fully overhauled my time-based notes yet to make use of embedded queries but I've tried it with a few that previously relied on Dataview and everything works perfectly.
 
@@ -121,7 +125,7 @@ And here's the result:
 
 ![Yearly Note Result](https://heymichellemac.com/assets/images/2022/MXA22020/years-results.png)
 
-### To Wrap Up
+## To Wrap Up
 
 So far, I've found that anywhere I have used Dataview previously I can replace it with an embedded query. This has forced me to simplify the way I retrieve data and has dramatically simplified how I think about the information stored in my Obsidian vault.
 

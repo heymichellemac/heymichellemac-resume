@@ -4,22 +4,26 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "heymichellemac-resume",
   description: "heymichellemac-resume",
+  lastUpdated: true,
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
+      { text: "Resume - PDF", link: "/resume-pdf" },
       { text: "My Resume", link: "/about-me" },
       { text: "My Portfolio", link: "/portfolio/walkthrough-guide" },
-      { text: "Resume - PDF", link: "#" },
     ],
 
     sidebar: [
       {
         text: "My Resume",
         items: [
+          { text: "Resume - PDF", link: "/resume-pdf" },
           { text: "About Me", link: "/about-me" },
           { text: "Work Experience", link: "/work-experience" },
-          { text: "Resume - 1 Page PDF" },
         ],
       },
       {
@@ -51,5 +55,10 @@ export default defineConfig({
         link: "https://pkm.social/@heymichellemac",
       },
     ],
+
+    footer: {
+      message:
+        'Made by <a rel="me" href="https://heymichellemac.com/" target="_blank">heymichellemac</a>',
+    },
   },
 });

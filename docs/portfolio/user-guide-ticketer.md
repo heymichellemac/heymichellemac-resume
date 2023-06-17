@@ -6,6 +6,10 @@ title: Writing Sample - User Guide For Ticketing Application
 
 *Please Note: This user guide has been sanitized for confidentiality reasons. All screenshots and customer-specific information have been removed.*
 
+**Table Of Contents**
+
+[[TOC]]
+
 ## Create Ticket Page
 
 This is where you can manually create new tickets.
@@ -43,11 +47,7 @@ To advance a ticket's state to an unsupported state or to change the workflow:
 3. Select the dropdown next to **Choose to advance** to select a state to move the ticket into.
 4. You will be asked to confirm the changes. Select **Yes** to proceed or **Cancel** to stop any status change.
 
-### Ticket Details
-
-This section contains ticket information as well as the ability to perform several actions which are described in the following sections.
-
-#### Manage Attachments
+### Manage Attachments
 
 Here you can view, add or remove attachments relevant to the ticket.
 
@@ -62,7 +62,7 @@ To remove an attachment:
 1. Navigate to a ticket and select the **Attachments** button in the **Details** section.
 2. Select the **Delete** icon next to the attachment. You will be asked to confirm this action.
 
-#### Send Email
+### Send Email
 Here you can send emails relevant to the ticket.
 
 To send an email for a ticket:
@@ -73,13 +73,13 @@ To send an email for a ticket:
 4. Add **CC**, **BCC**, or **Reply To** by selecting them from the top right of the dialog.
 5. Select **Send Mail** to send the email.
 
-#### Ticket History
+### Ticket History
 
 Here you can view the history of the ticket including form additions, status changes, and priority changes.
 
 You can view who made the update, when it was made, and the nature of the update.
 
-#### Print Ticket
+### Print Ticket
 
 This option generates a print view of the ticket.
 
@@ -88,7 +88,7 @@ When you select the **Print Ticket** button you're given two options:
 - Print Ticket Info Only - This will print the ticket details not including forms.
 - Print Ticket With Forms - This will print the ticket details and forms.
 
-#### Manage Owners
+### Manage Owners
 
 Here you can view and manage ticket owners.
 
@@ -105,7 +105,7 @@ To remove an owner from a ticket:
 2. Drag a user from the right column into the left column.
 3. Select **Save Owners** to save your changes or select **Cancel** to cancel any changes.
 
-#### Follow Up
+### Follow Up
 
 Here you can set follow up reminders for the ticket.
 
@@ -121,13 +121,13 @@ To expire a follow up for a ticket (i.e. turn it off):
 1. Navigate to a ticket and select the **Follow Up** button in the **Details** section.
 2. Select **Expire Follow Up**. You will be asked to confirm this action.
 
-#### Ticket Group
+### Ticket Group
 
 Here you can manage the parent and child grouping of the ticket.
 
 A ticket that has one or more sub-tickets (children) is classed as a parent ticket.
 
-##### Regroup Parent
+#### Regroup Parent
 
 Regrouping a parent ticket will regroup the parent ticket and its associated child tickets under a new parent ticket. The original parent ticket will become a child of the new parent ticket. Similarly, the original child tickets will also become a child of the new parent ticket.
 
@@ -138,7 +138,7 @@ To regroup a parent ticket:
 3. Search for and select a ticket to re-group the parent ticket and its associated child ticket(s) under.
 4. Select **Regroup**.
 
-##### Ungroup Child Ticket(s)
+#### Ungroup Child Ticket(s)
 
 Ungrouping child tickets will remove selected child tickets from their current group. This will return them to normal un-grouped tickets.
 
@@ -149,7 +149,7 @@ To ungroup a child ticket or tickets:
 3. Select **Ungroup Children**.
 4. Then, select **Ungroup**.
 
-##### Regroup Child Ticket(s)
+#### Regroup Child Ticket(s)
 
 Regrouping child tickets will move selected child tickets from their current group to a group defined by the user. You can either create a new grouping or group these tickets under an existing grouping.
 
@@ -161,7 +161,7 @@ To regroup a child ticket or tickets:
 4. Search for and select a ticket to re-group these tickets under.
 5. Select **Regroup**.
 
-#### Running Log
+### Running Log
 
 This section contains a list of ticket updates including status changes, form changes, owner updates, and manual running log updates.
 
