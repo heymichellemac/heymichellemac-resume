@@ -6,9 +6,6 @@ export default defineConfig({
   description: "heymichellemac-resume",
   lastUpdated: true,
   themeConfig: {
-    search: {
-      provider: "local",
-    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
